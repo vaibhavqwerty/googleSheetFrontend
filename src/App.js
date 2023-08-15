@@ -34,6 +34,11 @@ function App(props) {
     return (
         <div>
             <div>
+            <Row gutter={[16, 24]}>
+                    <Col span={20}>
+                       <p>Name :</p>
+                    </Col>
+                </Row>
                 <Row gutter={[16, 24]}>
                     <Col span={20}>
                         <Input
@@ -43,6 +48,11 @@ function App(props) {
                               localData.name = e?.target?.value ? e?.target?.value?.trim() : "";
                             }}
                         />
+                    </Col>
+                </Row>
+                <Row gutter={[16, 24]}>
+                    <Col span={20}>
+                       <p>Mobile Number :</p>
                     </Col>
                 </Row>
                 <Row gutter={[16, 24]}>
